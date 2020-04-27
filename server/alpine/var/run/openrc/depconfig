@@ -1,0 +1,4 @@
+/etc/lvm/lvm.conf
+/etc/fstab
+/etc/exports
+/etc/exports.d/*.exports

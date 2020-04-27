@@ -1,0 +1,9 @@
+exec=/usr/sbin/syslog-ng
+argv_0=/usr/sbin/syslog-ng
+argv_1=--persist-file
+argv_2=/var/lib/syslog-ng/syslog-ng.persist
+argv_3=--cfgfile
+argv_4=/etc/syslog-ng/syslog-ng.conf
+argv_5=--pidfile
+argv_6=/run/syslog-ng.pid
+pidfile=/run/syslog-ng.pid

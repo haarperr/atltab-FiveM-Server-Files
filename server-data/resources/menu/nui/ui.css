@@ -1,0 +1,26 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto' );
+
+#actionmenu {
+    position: absolute;
+    left: 20%; 
+    top: 25%;
+}
+
+#actionmenu a {
+    font-family: 'Roboto', sans-serif;
+    padding: 6px; 
+    margin: 6px;
+    cursor: pointer; 
+    width: 190px; 
+    display: block; 
+    text-transform: uppercase;
+}
+
+#vehicle a, #leo a, #civ a {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px; 
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block; 
+    text-transform: uppercase;
+}
