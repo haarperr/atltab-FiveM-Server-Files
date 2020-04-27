@@ -1,0 +1,7 @@
+[Seats]
+seats=/org/freedesktop/ConsoleKit/Seat1
+
+[Seat /org/freedesktop/ConsoleKit/Seat1]
+kind=0
+sessions=
+devices=

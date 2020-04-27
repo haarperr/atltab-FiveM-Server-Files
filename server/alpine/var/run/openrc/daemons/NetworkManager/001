@@ -1,0 +1,5 @@
+exec=/usr/sbin/NetworkManager
+argv_0=/usr/sbin/NetworkManager
+argv_1=--pid-file
+argv_2=/run/NetworkManager/NetworkManager.pid
+pidfile=/run/NetworkManager/NetworkManager.pid

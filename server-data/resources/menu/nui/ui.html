@@ -1,0 +1,70 @@
+<!-- 
+
+	ActionMenu 
+	Created by WolfKnight
+	Additional help from lowheartrate, TheStonedTurtle, and Briglair. 
+
+ -->
+
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="ui.js" type="text/javascript"></script>
+		<script src="materialize.min.js" type="text/javascript"></script>
+		<script src="materialize.js" type="text/javascript"></script>
+		<link href="materialize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="materialize.css" rel="stylesheet" type="text/css"/>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="actionmenu" style="display: none;">
+        	<!-- 
+        		This mainmenu div should be left as it is, you should change the as though.
+
+        		If you want to make a submenu, then you must create a new div, with the ID of the 
+        		div being the data-sub attribute of the button that will open it. For example, the 
+        		below a Example Submenu, has the data-sub attribute of "examplesubmenu", which
+        		is the same id as the div below. All submenus must also have a data-parent attribute. 
+        	 -->
+        <div id="mainmenu">
+			<a class="btn btn-medium blue menuoption" data-sub="vehicle">Vehicle</a>
+			
+			
+            <a class="btn btn-medium blue menuoption" data-sub="leo">LEO</a>
+            <a class="btn btn-medium blue menuoption" data-sub="civ">Civilian</a>
+		</div>
+		
+		<div id="vehicle" data-parent="mainmenu" style="display: none;">
+			<a class="btn btn-medium menuoption" data-action="engine">Turn Engine On/Off</a>
+			<a class="btn btn-medium menuoption" data-action="trunk">Open Trunk</a>
+			<a class="btn btn-medium menuoption" data-action="trunkclose">Close Trunk</a>
+			<a class="btn btn-medium menuoption" data-action="windows">Roll Down Window</a>
+			<a class="btn btn-medium menuoption" data-action="doors">Open Doors</a>
+		</div>
+			
+		<div id="leo" data-parent="mainmenu" style="display: none;">
+			<a class="btn btn-medium menuoption" data-action="stun_gun">Equip Stun Gun</a>
+			<a class="btn btn-medium menuoption" data-action="cuff">Cuff Player</a>
+			<a class="btn btn-medium menuoption" data-action="drag">Drag Player</a>
+			<a class="btn btn-medium menuoption" data-action="seat">Put Player In Vehicle</a>
+			<a class="btn btn-medium menuoption" data-action="unseat">unseat</a>
+			<a class="btn btn-medium menuoption" data-action="radar">Radar</a>
+			<a class="btn btn-medium menuoption" data-action="gh">Gun holster</a>
+			<a class="btn btn-medium menuoption" data-action="r">Radio shoulder</a>
+		</div>
+		
+		<div id="civ" data-parent="mainmenu" style="display: none;">
+			<a class="btn btn-medium menuoption" data-action="assault_rifle">Equip AR</a>
+			<a class="btn btn-medium menuoption" data-action="pistol">Equip Pistol</a>
+			<a class="btn btn-medium menuoption" data-action="handsup">Hands Up</a>
+            <a class="btn btn-medium menuoption" data-action="kneel">Kneel</a>
+			<a class="btn btn-medium menuoption" data-action="gh">Gun holster</a>
+        </div>
+
+<!-- Do not remove this or you will not be able to exit the menu --> 
+			<a class="btn btn-medium orange" onclick="ResetMenu()">Back</a>
+			<a class="btn btn-medium menuoption red" data-action="exit">Exit</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,800);
+
+body, html {
+	overflow-y: hidden;
+}
+
+#admin {
+	font-family: 'Roboto', sans-serif;
+	height: 700px;
+	background: rgb(60, 60, 60);
+	color: white;
+	width: 800px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -350px;
+	margin-left: -400px;
+	padding-bottom: 20px;
+}
+
+#main {
+	height: 640px;
+}
+
+#tabs {
+	height: 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+	width: 100px;
+	height: 30px;
+	float: left;
+	border: none;
+	font-weight: bold;
+	color: white;
+	background: rgb(50, 50, 50);
+}
+
+.tab.selected {
+	background: #2980b9;
+}
+
+#list {
+	display: inline-block;
+	margin-bottom: 100px;
+	width: 200px;
+	height: 640px;
+	overflow-x: hidden;
+	-webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+#selected h3 {
+	margin-left: 5px;
+}
+
+.quick {
+	margin-left: 10px;
+	width: 46%;
+	background: #2980b9;
+	border: none;
+	padding: 7px;
+	margin-top: 10px;
+	color: white;
+	font-size: 17px;
+}
+
+.group_set {
+	display: inline-block;
+	padding: 7px;
+	width: 278px;
+}
+
+.group_set button {
+	padding: 10px 0;
+	border: none;
+	width: 100%;
+	margin-top: 10px;
+	background: #2980b9;
+	color: white;
+	font-weight: bold;
+}
+
+.group_set input {
+	width: 100%;
+	padding:7px;
+}
+
+.group_set label {
+	display: block;
+}
+
+#selected {
+	position: absolute;
+	display: inline-block;
+	width: 600px;
+	height: 640px;
+}
+
+#selected h1 {
+	margin-left: 20px;
+}
+
+.player {
+	width: 100%;
+	text-weight: bold;
+	text-indent: 10px;
+	padding: 5px;
+}
+
+.player:nth-child(odd) {
+	background: transparent;
+}
+
+.player.selected {
+	background: -webkit-linear-gradient(right, transparent 0%, #2980b9 100%);
+}
+
+.topbar {
+	height: 50px;
+	font-weight: bold;
+	font-size: 26px;
+	background: rgb(40, 40, 40);
+}
+
+.body {
+	height: 650px;
+}
+
+.topbar p {
+	top: 0;
+	margin-top: 0;
+	padding: 10px;
+	display: inline-block;
+}
+
+#close {
+	position: absolute;
+	right: -5px;
+	top:0;
+	padding: 5px;
+	padding-right: 10px;
+	color: rgb(255, 0, 0);
+}
