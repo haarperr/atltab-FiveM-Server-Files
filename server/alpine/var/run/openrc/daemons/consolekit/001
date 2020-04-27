@@ -1,3 +1,0 @@
-exec=/usr/sbin/console-kit-daemon
-argv_0=/usr/sbin/console-kit-daemon
-pidfile=/run/ConsoleKit/pid

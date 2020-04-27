@@ -1,8 +1,0 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url('vhs.ttf');
-}
-
-div {
-    font-family: myFirstFont;
-}
